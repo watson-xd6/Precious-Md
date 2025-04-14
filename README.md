@@ -1,5 +1,5 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR YOUR +SUPPORT-DONT; FORGET+SATAR+FORK+MYREPO;CREATED+BY+WATSON FOURPENCE;RELEASED+15-2-2025" alt="Typing SVG" /></a>
-<a><img src='https://i.imgur.com/QxeVvOc.jpeg'/></a>
+<a><img src='https://files.catbox.moe/2899fa.jpg'/></a>
 
  </p>
   <p align="center">
@@ -47,7 +47,7 @@
 
 
 
-<a href=""_blank">
+<a href="_blank">
   <img src="https://img.shields.io/badge/PAIR CODE-rainbow?style=for-the-badge&logo=render" alt="Authenticate With WhatsApp" width="170" height="34">
 </a>
 
