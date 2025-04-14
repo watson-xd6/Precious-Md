@@ -13,37 +13,40 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
-┃★╭──────────────
-┃★│ 𝑶𝑾𝑵𝑬𝑹 : *${config.BOT_NAME}*
-┃★│ 𝑩𝑨𝑰𝑳𝑬𝒀𝑺 : *Multi Device*
-┃★│ 𝑻𝒀𝑷𝑬 : *NodeJs*
-┃★│ 𝑷𝑳𝑨𝑻𝑭𝑶𝑹𝑴 : *Heroku*
-┃★│ 𝑴𝑶𝑫𝑬 : *[${config.MODE}]*
-┃★│ 𝑷𝑹𝑰𝑭𝑰𝑿 : *[${config.PREFIX}]*
-┃★│ 𝑽𝑬𝑹𝑺𝑰𝑶𝑵 : *v 2.0.0*
-┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• .ᴀɪᴍᴇɴᴜ
-┃◈┃• .ᴀɴɪᴍɪᴇᴍᴇɴᴜ
-┃◈┃• .ᴄᴏɴᴠᴇʀᴛᴍᴇɴᴜ
-┃◈┃• .ꜰᴜɴᴍᴇɴᴜ
-┃◈┃• .ᴅʟᴍᴇɴᴜ
-┃◈┃• .ʟɪꜱᴛᴄᴍᴅ
-┃◈┃• .ᴍᴇɪɴᴍᴇɴᴜ
-┃◈┃• .ᴀʟʟᴍᴇɴᴜ
-┃◈┃• .ɢʀᴏᴜᴘᴍᴇɴᴜ
-┃◈┃• .ᴏᴡɴᴇʀᴍᴇɴᴜ
-┃◈┃• .ᴏᴛʜᴇʀᴍᴇɴᴜ
-┃◈┃• .ʀᴇᴘᴏ
-┃◈┃• .ʟᴏɢᴏ<ᴛᴇxᴛ>
-┃◈┃• .ʙᴜɢᴍᴇɴᴜ
-┃◈┃• .ᴀɴᴛɪᴅᴇʟ 
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+╭─❍ *「 ${config.BOT_NAME} MENU 」* ❍─╮
+│
+├• *Owner:* ${config.BOT_NAME}
+├• *Mode:* ${config.MODE}
+├• *Prefix:* ${config.PREFIX}
+├• *Version:* 2.0.0
+├• *Platform:* Heroku
+├• *Baileys:* Multi-Device
+│
+╰─╼━━━━━━━━━━━━━━━━╾─╯
+
+╭─⊷ *COMMAND CATEGORIES*
+│
+├◉ .aimenu
+├◉ .animemenu
+├◉ .convertmenu
+├◉ .funmenu
+├◉ .dlmenu
+├◉ .listcmd
+├◉ .mainmenu
+├◉ .allmenu
+├◉ .groupmenu
+├◉ .ownermenu
+├◉ .othermenu
+├◉ .repo
+├◉ .logo <text>
+├◉ .bugmenu
+├◉ .antidel
+
+╰─╼━━━━━━━━━━━━━━━━╾─╯
+
+${config.CAPTION}
+`;
 
         await conn.sendMessage(
             from,
@@ -89,30 +92,29 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Download Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• facebook
-┃◈┃• mediafire
-┃◈┃• tiktok
-┃◈┃• twitter
-┃◈┃• Insta
-┃◈┃• apk
-┃◈┃• img
-┃◈┃• play
-┃◈┃• play2
-┃◈┃• audio
-┃◈┃• video
-┃◈┃• video2
-┃◈┃• ytmp3
-┃◈┃• ytmp4
-┃◈┃• song
-┃◈┃• darama
-┃◈┃• gdrive
-┃◈┃• smovie
-┃◈┃• baiscope 
-┃◈┃• ginisilia 
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = `╭──❍ *「 DOWNLOAD MENU 」* ❍─╮
+│
+├◉ .facebook
+├◉ .mediafire
+├◉ .tiktok
+├◉ .twitter
+├◉ .Insta
+├◉ .apk
+├◉ .img
+├◉ .play
+├◉ .play2
+├◉ .audio
+├◉ .video
+├◉ .video2
+├◉ .ytmp3
+├◉ .ytmp4
+├◉ .song
+├◉ .darama
+├◉ .gdrive
+├◉ .smovie
+├◉ .baiscope
+├◉ .ginisilia
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -146,48 +148,48 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "👨‍👩‍👧‍👧",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try
        {
-        let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• grouplink
-┃◈┃• add
-┃◈┃• remove
-┃◈┃• kick
-┃◈┃• promote 
-┃◈┃• demote
-┃◈┃• dismiss 
-┃◈┃• revoke
-┃◈┃• setgoodbye
-┃◈┃• setwelcome
-┃◈┃• delete 
-┃◈┃• getpic
-┃◈┃• ginfo
-┃◈┃• delete 
-┃◈┃• disappear on
-┃◈┃• disappear off
-┃◈┃• disappear 7D,24H
-┃◈┃• allreq
-┃◈┃• updategname
-┃◈┃• updategdesc
-┃◈┃• joinrequests
-┃◈┃• senddm
-┃◈┃• nikal
-┃◈┃• mute
-┃◈┃• unmute
-┃◈┃• lockgc
-┃◈┃• unlockgc
-┃◈┃• invite
-┃◈┃• tag
-┃◈┃• hidetag
-┃◈┃• tagall
-┃◈┃• tagadmins
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = `╭─❍ *「 GROUP MENU 」* ❍─╮
+│
+├◉ .grouplink
+├◉ .setgoodbye
+├◉ .setwelcome
+├◉ .add
+├◉ .remove
+├◉ .kick
+├◉ .promote
+├◉ .demote
+├◉ .dismiss
+├◉ .revoke
+├◉ .delete
+├◉ .repo
+├◉ .getpic
+├◉ .ginfo
+├◉ .delete
+├◉ .disappear on
+├◉ .disappear off
+├◉ .disappear 7D,24H
+├◉ .allreq
+├◉ .updategname
+├◉ .updategdesc
+├◉ .joinrequests
+├◉ .senddm
+├◉ .nikal
+├◉ .mute
+├◉ .unmute
+├◉ .lockgc
+├◉ .unlockgc
+├◉ .invite
+├◉ .tag
+├◉ .hidetag
+├◉ .tagall
+├◉ .tagadmins
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -227,23 +229,22 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
 
-        let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• insult
-┃◈┃• hack
-┃◈┃• joke
-┃◈┃• heart 
-┃◈┃• happy 
-┃◈┃• sad
-┃◈┃• angry 
-┃◈┃• shy
-┃◈┃• kiss
-┃◈┃• moon
-┃◈┃• cunfuzed
-┃◈┃• hand
-┃◈┃• nikal
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭─❍ *「 FUN MENU 」* ❍─╮
+│
+├◉ .insult
+├◉ .hack
+├◉ .joke
+├◉ .heart
+├◉ .happy
+├◉ .sad
+├◉ .angry
+├◉ .shy
+├◉ .kiss
+├◉ .moon
+├◉ .cunfuzed
+├◉ .hand
+├◉ .nikal
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -282,24 +283,23 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• fact
-┃◈┃• font
-┃◈┃• define
-┃◈┃• news
-┃◈┃• movie
-┃◈┃• weather
-┃◈┃• srepo
-┃◈┃• insult
-┃◈┃• save
-┃◈┃• wikipedia
-┃◈┃• gpass
-┃◈┃• githubstalk
-┃◈┃• yts
-┃◈┃• ytv
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭─❍ *「 OTHER MENU 」* ❍─╮
+│
+├◉ .srepo
+├◉ .fact
+├◉ .font
+├◉ .define
+├◉ .news
+├◉ .movie
+├◉ .weather
+├◉ .insult
+├◉ .save
+├◉ .wikipedia
+├◉ .gpass
+├◉ .githubstalk
+├◉ .yts
+├◉ .ytv
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -338,19 +338,17 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Main Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• ping
-┃◈┃• alive
-┃◈┃• runtime
-┃◈┃• uptime 
-┃◈┃• repo
-┃◈┃• owner
-┃◈┃• menu
-┃◈┃• menu2
-┃◈┃• restart
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭──❍ *「 MAIN MENU 」* ❍─╮
+│
+├◉ .ping
+├◉ .alive
+├◉ .runtime
+├◉ .uptime
+├◉ .owner
+├◉ .menu
+├◉ .menu2
+├◉ .restart
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -389,27 +387,24 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Owner Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• owner
-┃◈┃• menu
-┃◈┃• menu2
-┃◈┃• listcmd
-┃◈┃• allmenu
-┃◈┃• repo
-┃◈┃• block
-┃◈┃• unblock
-┃◈┃• fullpp
-┃◈┃• setpp
-┃◈┃• restart
-┃◈┃• shutdown
-┃◈┃• updatecmd
-┃◈┃• alive
-┃◈┃• ping 
-┃◈┃• gjid
-┃◈┃• jid
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭──❍ *「 OWNER MENU 」* ❍─╮
+│
+├◉ .owner
+├◉ .menu
+├◉ .menu2
+├◉ .allmenu
+├◉ .block
+├◉ .unblock
+├◉ .fullpp
+├◉ .setpp
+├◉ .restart
+├◉ .shutdown
+├◉ .updatecmd
+├◉ .alive
+├◉ .gjid
+├◉ .ping
+├◉ .jid
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -448,17 +443,16 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Convert Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• sticker
-┃◈┃• sticker2
-┃◈┃• fancy
-┃◈┃• take
-┃◈┃• tomp3
-┃◈┃• tts
-┃◈┃• trt
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭──❍*「 CONVERTER MENU 」* ❍─╮
+│
+├◉ .sticker
+├◉ .sticker2
+├◉ .fancy
+├◉ .take
+├◉ .tomp3
+├◉ .tts
+├◉ .trt
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -498,20 +492,17 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-          let dec = `╭━━〔 *Anime Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-
-┃◈┃• dog
-┃◈┃• king
-┃◈┃• animegirl
-┃◈┃• animegirl
-┃◈┃• animegirl1
-┃◈┃• animegirl2
-┃◈┃• animegirl3
-┃◈┃• animegirl4
-┃◈┃• animegirl5
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+          let dec = ` ╭──❍*「 ANIME MENU 」* ❍─╮
+│
+├◉ .dog
+├◉ .king
+├◉ .animegirl
+├◉ .animegirl1
+├◉ .animegirl2
+├◉ .animegirl3
+├◉ .animegirl4
+├◉ .animegirl5
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -551,17 +542,16 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• ai
-┃◈┃• gpt
-┃◈┃• meta
-┃◈┃• blackbox
-┃◈┃• gpt4
-┃◈┃• bing
-┃◈┃• copilot
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭──❍*「 AI MENU 」* ❍─╮
+│
+├◉ .ai
+├◉ .gpt
+├◉ .meta
+├◉ .gpt4
+├◉ .blackbox
+├◉ .bing
+├◉ .copilot
+╰─╼━━━━━━━━━━━━━━━━╾─╯  
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
@@ -601,17 +591,16 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝐁𝐔𝐆 𝐌𝐄𝐍𝐔* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• 𝑪𝑹𝑨𝑺𝑯(+263****)
-┃◈┃• 𝑿𝑫(+263****)
-┃◈┃• 𝑶𝑻𝑷𝑳𝑶𝑪𝑲(+263781****)
-┃◈┃• 𝑻𝑬𝑴𝑷𝑩𝑨𝑵(+263781*****)
-┃◈┃• 𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑮𝑹𝑶𝑼𝑷 𝑳𝑰𝑵𝑲)
-┃◈┃• 𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑼𝑺𝑬 𝑻𝑯𝑰𝑺 𝑪𝑴𝑫 𝑰𝑵 𝑮𝑪)
-┃◈┃• 𝑩𝑼𝑮(+263******)
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+        let dec = ` ╭──❍ *「 BUG COMING SOON😁 」* ❍─╮
+│
+├◉ .𝑪𝑹𝑨𝑺𝑯(+263****)
+├◉ .𝑿𝑫(+263****)
+├◉ .𝑶𝑻𝑷𝑳𝑶𝑪𝑲(+263781****)
+├◉ .𝑻𝑬𝑴𝑷𝑩𝑨𝑵(+263781*****)
+├◉ .𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑮𝑹𝑶𝑼𝑷 𝑳𝑰𝑵𝑲)
+├◉ .𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑼𝑺𝑬 𝑻𝑯𝑰𝑺 𝑪𝑴𝑫 𝑰𝑵 𝑮𝑪)
+├◉ .𝑩𝑼𝑮(+263******)
+╰─╼━━━━━━━━━━━━━━━━╾─╯
 > ${config.CAPTION}`;
 
         await conn.sendMessage(
