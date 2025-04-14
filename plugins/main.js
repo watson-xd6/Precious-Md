@@ -212,7 +212,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: '' },
+            audio: { url: 'https://s31.aconvert.com/convert/p3r68-cdx67/8geht-s7m05.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
