@@ -1,5 +1,5 @@
 {
-    "bot-name": "PRECIOUS-MD",
+    "bot-name": "precious-md",
     "description": "whatsapp user bot",
     "logo": "https://files.catbox.moe/2899fa.jpg",
     "keywords": ["bot"],
@@ -15,7 +15,7 @@
     "BOT_NAME": {
       "description": "put your BOT a name",
       "required": true,
-      "value": "PRECIOUS-MD"
+      "value": "precious-md"
     },
     "OWNER_NUMBER": {
       "description": "put your Number and name for Owner",
